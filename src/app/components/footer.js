@@ -5,8 +5,8 @@ export default function Footer() {
     return (
         <div className="w-full flex flex-col justify-center items-center gap-4 pb-6">
             <div className="w-full flex flex-row justify-center flex-wrap gap-4">
-                <div class="w-[24rem] flex flex-col justify-center items-center">
-                    <h4 class="text-sm uppercase font-bold">Follow Me On</h4>
+                <div className="w-[24rem] flex flex-col justify-center items-center">
+                    <h4 className="text-sm uppercase font-bold">Follow Me On</h4>
                     <div className="w-[15rem] h-fit flex flex-row flex-nowrap justify-center items-center gap-3 py-6 ">
                         <button className="rounded-full p-1 px-2 bg-cerisered-600">
                             <i className="bi bi-instagram text-white"></i>
@@ -27,31 +27,32 @@ export default function Footer() {
                         <span className="text-4xl">JAGUAR</span>
                     </figure>
                     <p className="w-9/12 text-sm font-bold text-center">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Obcaecati voluptate.
+                       A commercial platform being used for the development and maintance of the data sets and structures.
                     </p>
                 </div>
                 <div className="w-10/12 max-w-[24rem] flex flex-row flex-wrap justify-center items-center gap-4 p-2 py-4 rounded-xl">
                     <h3 className="w-full text-sm uppercase font-bold text-center">
                         Join my newsletter
                     </h3>
-                    <div className="max-w-[24rem] flex flex-grow flex-row flex-wrap justify-center items-center gap-4">
-                        <input
-                            className="w-full sm:w-7/12 text-sm font-semibold p-4 border-[0.1rem] border-slate-200 rounded-xl"
-                            type="email"
-                            name="email"
-                            id="newsletter_name"
-                            placeholder="Your Email..."
-                        />
+                    <div className="sm:w-[36rem] flex flex-grow flex-row flex-wrap justify-center items-start sm:gap-6 gap-4">
+                        <div className="flex flex-col justify-start items-start gap-2 w-full sm:w-7/12">
+                            <input
+                                className="w-full text-sm font-semibold p-4 border-[0.1rem] border-slate-200 rounded-xl"
+                                type="email"
+                                name="email"
+                                id="newsletter_name"
+                                placeholder="Your Email..."
+                            />
+                            <p className="w-full text-center text-sm font-semibold text-cerisered-700">
+                                This field is required.
+                            </p>
+                        </div>
                         <input
                             className="flex-grow text-sm font-semibold p-4 px-8 rounded-xl uppercase bg-cerisered-600 text-white"
                             type="button"
                             value="sign up"
                         />
                     </div>
-                    <p className="w-full text-center text-sm font-semibold text-cerisered-700">
-                        This field is required.
-                    </p>
                 </div>
             </div>
             <div className="w-11/12 flex flex-row flex-nowrap justify-center items-center gap-3">

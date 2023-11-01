@@ -15,7 +15,7 @@ export default function NewsLetter() {
                     placeholder="Your Name..."
                 />
             </div>
-            <div className="w-auto max-w-[48.75rem] flex flex-grow flex-row flex-wrap justify-center items-center gap-3">
+            <div className="w-auto max-w-[48.75rem] flex flex-row flex-wrap justify-center items-center gap-3">
                 <input
                     className="w-[18rem] text-sm font-semibold p-4 border-[0.1rem] border-slate-200 rounded-xl"
                     type="email"
@@ -24,7 +24,7 @@ export default function NewsLetter() {
                     placeholder="Your email address..."
                 />
                 <input
-                    className="max-w-[18rem] sm:w-[18rem] flex-grow text-sm font-semibold p-4 px-8 rounded-xl uppercase bg-cerisered-600 text-white"
+                    className="max-w-[10rem] sm:w-[18rem] flex-grow text-sm font-semibold p-4 px-8 rounded-xl uppercase bg-cerisered-600 text-white"
                     type="button"
                     value="sign up"
                 />

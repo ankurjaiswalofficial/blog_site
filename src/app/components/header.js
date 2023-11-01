@@ -7,7 +7,7 @@ export default function Header() {
                 <i className="bi bi-list text-4xl"></i>
             </div>
             <figure className="brand_logo">
-                <span className="text-4xl">
+                <span className="text-5xl">
                     JAGUAR
                 </span>
             </figure>

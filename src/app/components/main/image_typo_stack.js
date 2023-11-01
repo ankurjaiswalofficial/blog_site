@@ -2,12 +2,12 @@ import React from 'react'
 
 export default function ImageTypoStack(props) {
   return (
-    <div className="relative w-full h-fit flex flex-row flex-nowrap justify-start items-start gap-3">
-        <figure className="w-1/4 h-auto">
-            <img src={props.image.src} alt={props.image.alt} className='w-auto max-w-24 max-h-24 h-auto aspect-square'/>
+    <div className="relative w-full h-fit flex flex-row flex-nowrap justify-center items-center gap-3">
+        <figure className="w-2/4 h-full flex justify-center items-center">
+            <img src={props.image.src} alt={props.image.alt} className='w-auto h-auto rounded-md'/>
         </figure>
         <div className="w-3/4 text-start">
-            <h2 className="text-md font-bold">
+            <h2 className="text-sm font-semibold">
                 {props.text}
             </h2>
         </div>

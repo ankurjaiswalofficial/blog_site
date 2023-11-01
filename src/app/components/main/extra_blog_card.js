@@ -3,8 +3,8 @@ import ImageTypoStack from "./image_typo_stack";
 
 export default function ExtraBlogCard(props) {
     return (
-        <div className="w-full h-fit flex flex-col justify-center items-center gap-3">
-            <h4 className="w-full text-sm text-black font-bold uppercase text-center border-b-2 p-2 border-slate-100">
+        <div className="w-full h-fit flex flex-col justify-center items-center gap-4">
+            <h4 className="w-full text-sm text-black font-semibold uppercase text-center border-b-2 p-2 border-slate-100">
                 {props.description}
             </h4>
             {props.image ? (
@@ -12,22 +12,22 @@ export default function ExtraBlogCard(props) {
                     <img
                         src={props.image.src}
                         alt={props.image.alt}
-                        className="w-auto h-auto aspect-square rounded-xl"
+                        className="w-auto h-auto rounded-xl"
                     />
                 </figure>
             ) : null}
             {props.smallerText ? (
-                <h3 className="text-xs font-extrabold text-black uppercase text-center">
+                <h3 className="w-10/12 text-sm font-bold text-black uppercase text-center">
                     {props.smallerText}
                 </h3>
             ) : null}
             {props.largerText ? (
-                <h3 className="text-sm font-extrabold text-black uppercase text-center">
+                <h3 className="w-10/12 text-sm font-bold text-black uppercase text-center">
                     {props.largerText}
                 </h3>
             ) : null}
             {props.card_para ? (
-                <p className="w-full text-center font-bold text-sm">
+                <p className="w-11/12 text-center font-bold text-sm">
                     {props.card_para}
                 </p>
             ) : null}
@@ -75,7 +75,7 @@ export default function ExtraBlogCard(props) {
             {props.footer_link ? (
                 <a
                     href={props.footer_link.href}
-                    className="text-cerisered-600 uppercase text-sm font-bold underline underline-offset-4"
+                    className="text-cerisered-600 uppercase text-sm font-semibold underline underline-offset-8"
                 >
                     {props.footer_link.text}
                 </a>
