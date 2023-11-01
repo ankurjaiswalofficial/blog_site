@@ -5,7 +5,7 @@ export default function UpdateCard() {
         <div className="w-full h-auto flex flex-row flex-wrap sm:flex-nowrap gap-5 justify-evenly items-center">
             {["My Story", "Recents", "Mastery", "Develop"].map((e, index) => {
                 return (
-                    <div className="relative w-auto h-auto sm:max-w-[28rem] rounded-xl">
+                    <div key={String(index) + "_Update_Card"} className="relative w-auto h-auto sm:max-w-[28rem] rounded-xl">
                         <img
                             src="/img/update_card.png"
                             alt="Update Card Background Image"
