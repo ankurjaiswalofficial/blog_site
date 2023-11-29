@@ -1,5 +1,4 @@
 import React from "react";
-import ExtraBlogCard from "./main/extra_blog_card";
 
 export default function Footer() {
     return (

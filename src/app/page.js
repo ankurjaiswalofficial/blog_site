@@ -1,14 +1,21 @@
-import Image from 'next/image'
-import Header from './components/header'
-import Main from './components/main/main'
-import Footer from './components/footer'
+"use client";
+import Footer from "./components/footer";
+import Header from "./components/Header/Header";
+import UserBoxContext, {
+    UserBoxContext_,
+} from "./components/contexts/UserBoxContext";
+import { useContext } from "react";
+import Main from "./components/Main/Main";
 
 export default function Home() {
-  return (
-    <>
-    <Header />
-    <Main />
-    <Footer />
-    </>
-  )
+    // const showUserBoxContent = useContext(UserBoxContext_);
+    return (
+        <UserBoxContext>
+            {/* <div onClick={() => showUserBoxContent.setShowUserBox(false)}> */}
+                <Header />
+                <Main />
+                {/* <Footer /> */}
+            {/* </div> */}
+        </UserBoxContext>
+    );
 }
